@@ -48,17 +48,21 @@ let myStudents = ["ahmad", "ali", "yamen", "mira"]
 let myStudentsMarks = [55, 45, 22, 77]
 
 
-for (let i = 0; i < myStudents.length; i++) {
-
+function markCalculate(params) {
+   
+       
     for (let j = 0; j < myStudentsMarks.length; j++) {
 
         if (myStudentsMarks[j] >= 50) {
-            console.log(myStudents[i] + " PASS")
+            console.log("Congratulations "+ myStudents[j]+" you got a score of "+myStudentsMarks[j] +" and you passed")
+    
+       
+        } else {
+            console.log("Unfortunately "+ myStudents[j]+" you got a score of "+myStudentsMarks[j] +" and you failed")
         }
-
-        else
-
-            console.log(myStudents[i] + " FAIL")
-
+        
+    
     }
 }
+    markCalculate()
+    
